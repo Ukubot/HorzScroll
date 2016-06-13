@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Horizontally Scrolling Site from CSS-Tricks</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="jquery.mousewheel.js"></script>
+
+	<script>
+	$(function(){
+		$("#page-wrap").wrapInner("<table><tr>");
+		$(".post").wrap("<td></td>");
+		$("body").mousewheel(function(event, delta) {
+			this.scrollLeft -= (delta * 30);
+			event.preventDefault();
+		});
+	});
+	</script>
+
+</head>
+
+<body>
+	<div id="page-wrap">
+
+		<div class="post">
+			<div class="sidebar-menu">
+				<h2><a href="#1">Clickbait</a></h2>
+				<h2><a href="#2">Options</a></h2>
+				<h2><a href="#3">Console</a></h2>
+				<h2><a href="#4">Exit</a></h2>
+			</div>
+		</div>
+		<div class="post" style="background-color:lightgrey;">
+			<div class="post-heading">
+				<h1>Heading</h1>
+			</div>
+		</div>
+		<div class="post" style="background-color:pink;">
+			<div class="post-heading">
+				<h1>Something</h1>
+			</div>
+		</div>
+		<div class="post" style="background-color:lightblue;">
+			<div class="post-heading">
+				<h1>Post</h1>
+			</div>
+		</div>
+		<div class="post" style="background-color:lightgreen;">
+			<div class="post-heading">
+				<h1>Title</h1>
+			</div>
+		</div>
+		<div class="post" style="background-color:brown;">
+			<div class="post-heading">
+				<h1>Time</h1>
+			</div>
+		</div>
+		<div class="post" style="background-color:orange;">
+			<div class="post-heading">
+				<h1>Trash</h1>
+			</div>
+		</div>
+		<div class="post" style="background-color:grey;">
+			<div class="post-heading">
+				<h1>Sleep</h1>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>

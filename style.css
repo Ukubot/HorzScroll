@@ -1,0 +1,63 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	overflow-y: hidden;
+	font-size: 62.5%;
+	font-family: 'Lucida Grande', Helvetica, sans-serif;
+	background: #121212;
+	color: #999;
+}
+
+table {
+	border-spacing: 0px;
+}
+
+tr {
+	padding: 0px;
+	vertical-align: top;
+	height: 100vh;
+}
+
+.sidebar-menu {
+	margin-top: 250px;
+}
+
+.post-heading {
+	padding-top: 250px;
+}
+
+/*
+STRUCTURE
+*/
+.post {
+	width: 300px;
+	height: 100vh;
+	background-color: #111;
+}
+
+/*
+TYPOGRAPHY
+*/
+p {
+	font-size: 1.2em; margin: 0 0 15px 0; text-align: center;
+}
+h1 {
+	font-family: Helvetica, sans-serif; font-size: 4.0em; text-align: center;
+	letter-spacing: -1px; color: #eee;
+}
+h2 {
+	margin: 7px;
+	font-family: Helvetica, sans-serif; font-size: 3.0em; text-align: center;
+	letter-spacing: -1px; color: #eee;
+}
+a {
+	text-decoration: none;
+	color: #eee;
+}
+a:hover {
+	color: #fff;
+	cursor: pointer;
+}
